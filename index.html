@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Pessoal</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- metadados da pagina -->
+    <meta charset="UTF-8"> <!-- define a codificacao de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- garante responsividade -->
+    <title>meu site pessoal</title>
+    <!-- importa fontes do google fonts para melhorar a tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- vincula o arquivo css -->
 </head>
 <body>
+    <!-- cabecalho da pagina -->
     <header>
-        <h1>Gabriel Ferrari</h1>
+        <h1>Gabriel Ferrari</h1> <!-- titulo principal da pagina -->
     </header>
 
+    <!-- conteudo principal da pagina -->
     <main>
+        <!-- secao de introducao -->
         <section>
             <p>
-                Olá! Me chamo Gabriel Ferrari tenho 20 anos e moro em Paulínia. Sou apaixonado por tecnologia, 
-                música e esportes. Adoro aprender coisas novas e explorar diferentes culturas.
+                Olá! Me chamo Gabriel Ferrari, tenho 20 anos e moro em Paulínia. Sou apaixonado por tecnologia, 
+                música e musculação. Adoro aprender coisas novas e explorar diferentes culturas.
             </p>
         </section>
 
+        <!-- secao de hobbies -->
         <section>
-            <h2>Meus Hobbies</h2>
-            <ul id="violao">
-                <li>Tocar Violão</li>
-            </ul>
-            <ul id="musculacao">
-                <li>Fazer Musculação</li>
-            </ul>
-            <ul id="videogame">
-                <li>Jogar Videogame</li>
+            <h2>Meus hobbies</h2>
+            <ul class="hobbies-list">
+                <!-- lista de hobbies com classes especificas para estilizacao -->
+                <li class="violao">Tocar violão</li>
+                <li class="musculacao">Praticar musculação</li>
+                <li class="videogame">Jogar videogame</li>
             </ul>
         </section>
 
+        <!-- secao de imagem representativa -->
         <section>
-            <div class="imagens-hobbies">
-                <img src="images/hobbies/gym.jpg" alt="Na academia">
+            <h2>Imagem do meu hobby</h2>
+            <div class="imagem-hobby">
+                <!-- imagem centralizada com efeito hover -->
+                <img src="images/hobbies/gym.jpg" alt="na academia">
             </div>
         </section>
 
+        <!-- secao de paises que gostaria de visitar -->
         <section>
-            <h2>Países que Gostaria de Visitar</h2>
+            <h2>Países que gostaria de visitar</h2>
             <table>
+                <!-- linhas da tabela com imagens e nomes dos paises -->
                 <tr>
-                    <td><img src="images/flags/japao.jpg" alt="Bandeira do Japão"></td>
+                    <td><img src="images/flags/japao.jpg" alt="bandeira do japao"></td>
                     <td>Japão</td>
                 </tr>
                 <tr>
-                    <td><img src="images/flags/noruega.jpg" alt="Bandeira da Islândia"></td>
+                    <td><img src="images/flags/noruega.jpg" alt="bandeira da noruega"></td>
                     <td>Noruega</td>
                 </tr>
                 <tr>
-                    <td><img src="images/flags/canada.jpg" alt="Bandeira da Nova Zelândia"></td>
+                    <td><img src="images/flags/canada.jpg" alt="bandeira do canada"></td>
                     <td>Canadá</td>
                 </tr>
             </table>
         </section>
 
+        <!-- secao de link de interesse -->
         <section>
             <h2>Link de Interesse</h2>
-            <a href="https://www.tecmundo.com.br" target="_blank">Visite o Tecmundo para mais informações sobre tecnologia!</a>
+            <!-- link externo para um site de tecnologia -->
+            <a href="https://www.tecmundo.com.br" target="_blank">Tecmundo!</a>
         </section>
 
+        <!-- secao interativa botao -->
         <section>
+            <!-- botao que exibe/oculta uma mensagem -->
             <button id="mensagemButton">Clique para ver uma mensagem!</button>
             <p id="mensagem" style="display: none;">Seja bem-vindo ao meu site pessoal!</p>
         </section>
     </main>
 
+    <!-- arquivo js para funcionalidade interativa -->
     <script src="script.js"></script>
 </body>
 </html>

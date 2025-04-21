@@ -1,116 +1,145 @@
-/* Estilização geral */
+/* estilizacao geral */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-    display: flex;
+    font-family: 'Poppins', Arial, sans-serif; /* define a fonte principal */
+    background: linear-gradient(135deg, #f4f4f9, #e0eafc); /* fundo com degrade suave */
+    margin: 0; /* remove margens padrão */
+    padding: 20px; /* adiciona espaçamento interno */
+    line-height: 1.6; /* define altura entre linhas */
+    display: flex; /* alinha elementos verticalmente */
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: #333; /* cor do texto */
 }
 
-/* Título principal */
+/* titulo principal */
 h1 {
-    color: black;
+    font-size: 2.5rem; /* tamanho grande para o titulo */
+    color: #2c3e50; /* cor escura para contraste */
     margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* sombra suave */
 }
 
-/* Parágrafo */
+/* paragrafo */
 p {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 30px;
-    max-width: 800px;
+    font-size: 1.1rem; /* tamanho medio para o texto */
+    margin-bottom: 20px;
+    max-width: 800px; /* limita largura para melhor leitura */
+    color: #555; /* cor cinza para contraste */
 }
 
-/* Estilo geral para a seção de hobbies */
-#violao,
-#musculacao,
-#videogame {
-    list-style-type: disc;
-    margin-left: 120px;
-    margin-bottom: 10px;
-    font-weight: bold;
+/* lista de hobbies */
+.hobbies-list {
+    list-style-type: disc; /* estilo de marcador padrao */
+    margin-left: 20px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
-/* Estilo específico para "Tocar Violão" */
-#violao li {
-    color: orange;
+.hobbies-list li {
+    font-weight: bold; /* negrito para destaque */
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* transicao suave para hover */
 }
 
-/* Estilo específico para "Praticar Musculação" */
-#musculacao li {
-    color: blue;
+.violao {
+    color: #ff7f50;
 }
 
-/* Estilo específico para "Jogar Videogame" */
-#videogame li {
-    color: green;
+.musculacao {
+    color: #3498db;
 }
 
-/* Imagem do hobby */
-.imagem-hobby {
-    display: block;
-    margin: 20px auto;
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    transition: transform 0.3s ease, border-color 0.3s ease; /* Efeito ao passar o mouse */
+.videogame {
+    color: #2ecc71;
 }
 
-.imagem-hobby:hover {
-    transform: scale(1.1); /* Amplia a imagem ao passar o mouse */
-    border-color: #007BFF; /* Altera a cor da borda */
+/* imagem do hobby */
+.imagem-hobby img {
+    display: block; /* alinhamento correto */
+    margin: 20px auto; /* centraliza a imagem */
+    width: 300px; /* largura fixa */
+    height: auto; /* mantem proporcao */
+    border-radius: 10px; /* bordas arredondadas */
+    border: 2px solid #ddd; /* borda suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra leve */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* animacao hover */
 }
 
-/* Tabela */
+.imagem-hobby img:hover {
+    transform: scale(1.1); /* amplia a imagem */
+    border-color: #3498db; /* altera cor da borda */
+}
+
+/* tabela */
 table {
-    width: 80%;
-    border-collapse: collapse;
-    margin: 20px auto;
+    width: 80%; /* largura responsiva */
+    border-collapse: collapse; /* remove espacos entre celulas */
+    margin: 20px auto; /* centraliza a tabela */
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra leve */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 table td {
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 15px; /* espaçamento interno */
+    border: 1px solid #ddd; /* borda suave */
+    transition: background-color 0.3s ease; /* animacao hover */
+}
+
+table td:hover {
+    background-color: #f9f9f9; /* altera cor de fundo ao passar o mouse */
 }
 
 table img {
-    width: 50px;
-    height: auto;
-    border-radius: 5px;
+    width: 50px; /* tamanho fixo */
+    height: auto; /* mantem proporcao */
+    border-radius: 5px; /* bordas arredondadas */
+    transition: transform 0.3s ease; /* animacao hover */
 }
 
-/* Link */
+table img:hover {
+    transform: scale(1.2); /* amplia a imagem */
+}
+
+/* link */
 a {
-    color: #007BFF;
-    text-decoration: none;
-    display: inline-block;
-    margin: 20px auto;
+    color: #3498db; /* cor azul clara */
+    text-decoration: none; /* remove sublinhado */
+    font-weight: bold; /* negrito para destaque */
+    transition: color 0.3s ease; /* animacao hover */
 }
 
 a:hover {
-    color: #0056b3;
+    color: #2980b9; /* altera cor ao passar o mouse */
 }
 
-/* Botão */
+/* botao */
 button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    display: block; /* alinhamento correto */
+    margin: 20px auto; /* centraliza o botao */
+    padding: 12px 24px; /* espaçamento interno */
+    background-color: #3498db; /* cor azul clara */
+    color: white; /* texto branco */
+    border: none; /* remove borda */
+    border-radius: 8px; /* bordas arredondadas */
+    font-size: 1rem; /* tamanho medio */
+    font-weight: bold; /* negrito para destaque */
+    cursor: pointer; /* cursor de clique */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* animacao hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra leve */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2980b9; /* altera cor ao passar o mouse */
+    transform: scale(1.05); /* amplia o botao */
+}
+
+/* mensagem */
+#mensagem {
+    font-size: 1.2rem; /* tamanho maior para destacar */
+    color: #2c3e50; /* cor escura para contraste */
+    margin-top: 10px;
+    font-style: italic; /* italico para estilo */
 }
